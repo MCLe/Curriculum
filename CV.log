@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.27)  27 FEB 2015 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.27)  27 FEB 2015 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -687,9 +687,9 @@ LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks24
 \dt@b=\toks25
 )
-(/usr/share/texlive/texmf-dist/tex/latex/moderncv/moderncvcolorblue.sty
-Package: moderncvcolorblue 2013/04/29 v1.5.1 modern curriculum vitae and letter
- color scheme: blue
+(/usr/share/texlive/texmf-dist/tex/latex/moderncv/moderncvcolorgreen.sty
+Package: moderncvcolorgreen 2013/04/29 v1.5.1 modern curriculum vitae and lette
+r color scheme: green
 )
 (/usr/share/texlive/texmf-dist/tex/latex/moderncv/moderncvstyleclassic.sty
 Package: moderncvstyleclassic 2013/04/29 v1.5.1 modern curriculum vitae and let
@@ -1322,8 +1322,8 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  27621 strings out of 494956
- 502022 string characters out of 6179494
- 579123 words of memory out of 5000000
+ 502028 string characters out of 6179494
+ 579124 words of memory out of 5000000
  30352 multiletter control sequences out of 15000+600000
  62068 words of font info for 74 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
@@ -1337,7 +1337,7 @@ re/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public
 exmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/marvosym/marvosym.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/symbols/msam5.pfb>
-Output written on CV.pdf (1 page, 206610 bytes).
+Output written on CV.pdf (1 page, 206608 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
