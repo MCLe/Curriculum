@@ -1,0 +1,169 @@
+
+\documentclass[a4paper,sans,10pt]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% specifying options for CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newboolean{cvit}
+\newboolean{cvaccademic}
+\newboolean{cvfull}
+\newboolean{cvpoli}
+
+\setboolean{cvit}{false}
+\setboolean{cvaccademic}{false}
+\setboolean{cvfull}{false}
+\setboolean{cvpoli}{false}
+
+%\extendedversion{La versione estesa del CV \`e disponibile a \url{www.sli-m.com/vernizzi.pdf}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Misc includes and commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+%\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amssymb}
+
+%\usepackage[cm]{fullpage}
+\usepackage[margin=1.2in]{geometry}
+
+\usepackage[document]{ragged2e}
+
+\usepackage{datetime}
+
+\moderncvtheme[blue]{classic}
+%\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+%\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\newcommand{\structure}[1]{\color{sectiontitlecolor}\textbf{#1}\color{black}}
+
+\newcommand{\summary}{Summary}
+\newcommand{\education}{Education}
+\newcommand{\experience}{Experience}
+\newcommand{\teaching}{Teaching}
+\newcommand{\research}{Scientific Activity}
+\newcommand{\projects}{Research Projects}
+\newcommand{\languages}{Languages}
+\newcommand{\skills}{Computer Skills}
+\newcommand{\interests}{Interests and Activities}
+\newcommand{\publications}{Publications (Selection)}
+\newcommand{\misc}{Other Information}
+
+\newcommand{\italian}[2]{\ifthenelse{\boolean{cvit}}{#1}{#2}}
+\newcommand{\accademic}[1]{\ifthenelse{\boolean{cvaccademic}}{#1}{}}
+\newcommand{\work}[1]{\ifthenelse{\boolean{cvaccademic}}{}{#1}}
+\newcommand{\full}[1]{\ifthenelse{\boolean{cvfull}}{#1}{}}
+\newcommand{\short}[1]{\ifthenelse{\boolean{cvfull}}{}{#1}}
+\newcommand{\poli}[2]{\ifthenelse{\boolean{cvpoli}}{#1}{#2}}
+
+\newcommand{\otc}{Open\_TC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Settings for work CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\work{
+    \nopagenumbers
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PERSONAL DATA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\firstname{Minh Chau}
+\familyname{Le}
+\title{Software Engineer}
+\address{Via Chisone, 10}{10138, Turin, Italy}
+\mobile{+39 328 77 84 004}
+\email{minhchau.le@live.com}
+\extrainfo{Date of birth: April 19\textsuperscript{rd}, 1991}
+\photo[64pt]{pic.jpg}   
+%\homepage{\url{}}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Competenze ed interessi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\vspace{-1.5em}  %%% Hack to fit in 1 page
+\justify
+Software engineer with experience in web applications, server side and mobile application development (WIndows Phone, Android).
+Earlier, I worked in marketing field planning, creating and organising campaign. Also worked as waiter and cook assistant to enter the job world and as a dealer.
+I can work with teams and deal with managers.
+Native languages Italian and vietnamese, fluent in English(CAE) and basic knowledge of Spanish.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TECH SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\skills}
+\begin{description}
+\item [Front end] JavaScript, C, C\#, java, HTML, CSS, xml, xsl, xaml
+\item [Back end] PHP/Yii framework, MySql
+\item [Dev ops] Vagrant, Linux, Bash, XMPP
+\item [Etc] Git, Vim, LaTeX, Phonegap
+\end{description}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% WORK EXPERIENCE
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{\experience}
+
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+  % Inizio: 01/11/2011
+  \textbf{Software Engineer}\hfill\textbf{since 2014}\\
+  \textbf{Ennova Srl, (Turin), \url{http://www.ennova.it}}\\
+\vspace{-1em}
+  \begin{itemize}
+  \item Implementation of crossplatform application using cordova/phonegap.
+  \item Implementation of backup and restore of contacts and multimedia content of MyHD platform for Windows Phone.
+  \item Development of logistics scheduler for an important mobile phone carrier.
+  \item Winner of 32 hours Microsoft Hackhathon in Innovation and Technology.
+\item Expo 2015 services for Telecom Italia
+  \end{itemize}
+
+\vspace{0.5em}
+  \textbf{Dealer}\hfill\textbf{2014}\\
+  \textbf{Telecom Italia Mobile, (Turin), \url{http://www.tim.it/home}}\\
+\vspace{-1em}
+  \begin{itemize}
+  \item Selling retail products to customer. 
+  \item Direct marketing.
+  \end{itemize}
+  
+  \vspace{0.5em}
+  \textbf{Marketing Manager}\hfill\textbf{2013 - 2014}\\
+  \textbf{Interitalia Srl, (Milan), \url{http://www. inter-italia.com.}}\\
+\vspace{-1em}
+  \begin{itemize}
+  \item In charge of a 10 members team, setting deadlines and organise everyone's work.
+  \item Marketing campaign development.
+  \item Dealing with other managers for new partnership.
+  \end{itemize}
+  
+\vspace{0.5em}
+  \textbf{Marketing Assistant and IT Consultant}\hfill\textbf{2009 - 2010}\\
+  \textbf{Bottega Verde Srl, (Cossato(BI)), \url{http://www.bottegaverde.it/}}\\
+\vspace{-1em}
+  \begin{itemize}
+  \item Visiting italian store to check the correct behaviour of employees. 
+  \item Team development of marketing campaigns.
+  \item Participation in development of the new internal database.
+  \end{itemize}  
+  
+\vspace{0.5em}
+  \textbf{Waiter and Cook Assistant}\hfill\textbf{2009}\\
+  \textbf{The Cluny Pub, (Newcastle Upon Tyne), \url{http://www.thecluny.com/}}\\
+\vspace{-1em}
+  \begin{itemize}
+  \item Welcome customer, serving tables. 
+  \item Cooking preparations.
+  \end{itemize} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\education}
+
+  \textbf{B.Sc. in  Computer Engineering}\hfill\textbf{March 2014}\\
+  \textit{Polytechnic University of Turin}
+
+\end{document}
